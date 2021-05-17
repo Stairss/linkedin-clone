@@ -7,10 +7,11 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { auth } from './firebase';
-import { logout } from './features/userSlice';
+import { logout, selectUser } from './features/userSlice';
 function Header() {
+    const user = useSelector(selectUser)
     const dispatch = useDispatch()
 
     const logoutOfApp = () => {
@@ -33,7 +34,7 @@ function Header() {
                 <HeaderOption title="Messaging" Icon={ChatIcon} />
                 <HeaderOption title="Notification" Icon={NotificationsIcon} />
                 <HeaderOption
-                    avatar={'https://i.pinimg.com/originals/29/24/89/292489e7d0bf8ce7d5ffd81be62d0800.png'}
+                    avatar={true}
                     title="Stairss"
                     onClick={logoutOfApp}
                 />

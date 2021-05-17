@@ -21,3 +21,7 @@
   .headerOption:hover {
     color: #000;
   }
+  .headerOption__avatar{
+    display: grid;
+    place-items: center;
+  }
