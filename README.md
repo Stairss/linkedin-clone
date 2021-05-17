@@ -1,4 +1,5 @@
-Deploy: https://linkedin-clone-f7c63.web.app/
+Hosting: https://linkedin-clone-f7c63.web.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
