@@ -35,7 +35,7 @@ function Header() {
                 <HeaderOption title="Notification" Icon={NotificationsIcon} />
                 <HeaderOption
                     avatar={true}
-                    title="Stairss"
+                    title='me'
                     onClick={logoutOfApp}
                 />
 
